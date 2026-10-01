@@ -7,10 +7,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send(
+  res.send(`
     <h1>کلاسینو 🎓</h1>
     <p>به کلاس آنلاین کلاسینو خوش آمدید!</p>
-  );
+  `);
 });
 
 app.listen(PORT, () => {
